@@ -1,0 +1,31 @@
+.news-page-text {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140.62%;
+  margin-left: 32px;
+}
+.news-page-block {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+}
+.news-page-other-text {
+  margin-top: 32px;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140.62%;
+}
+
+@media screen and (max-width: 480px) {
+  .news-page-block {
+    flex-direction: column;
+  }
+  .news-page-text {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}

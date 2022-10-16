@@ -1,0 +1,54 @@
+.header-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.where-title {
+  margin: 0 auto;
+}
+.where-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.city-members {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+}
+.member-text {
+  margin-left: 32px;
+}
+.city-members-item {
+  display: flex;
+  width: 75%;
+  align-items: center;
+}
+.members-block {
+  display: flex;
+  flex-direction: column;
+}
+.member-about {
+  margin-top: 16px;
+}
+
+.where-arrow {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .city-members {
+    flex-direction: column;
+  }
+  .city-members-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .city-members-item {
+    flex-direction: column;
+  }
+}

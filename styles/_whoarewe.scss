@@ -1,0 +1,38 @@
+.we-text,
+.we-list,
+.start-list {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: #000000;
+}
+.who-list,
+.who-list-item {
+  list-style-type: disc;
+}
+.who-list-item {
+  margin-bottom: 16px;
+}
+
+.who-title {
+  margin-bottom: 100px;
+}
+.we-text,
+.start-list {
+  margin-bottom: 16px;
+}
+.who-footer {
+  display: flex;
+  margin-top: 44px;
+}
+.arrow-footer {
+  width: 100px;
+  transform: rotate(180deg);
+}
+.logo-who-footer {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,134 @@
+.burger-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Гамбургер иконка */
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #f1f1f2;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu li {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140.62%;
+  color: #000000;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-list {
+  display: flex;
+  justify-content: space-between;
+}
+.language-list {
+  display: flex;
+}
+.main-item-link {
+  padding: 35px 50px;
+  position: relative;
+}
+.main-item-link::after {
+  transition: 0.3s;
+  background: black;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  left: 50px;
+  bottom: 30px;
+}
+
+.main-item-link:hover::after {
+  width: 48%;
+}
+.language-item {
+  padding: 50px 15px;
+}
+
+@media screen and (min-width: 576px) {
+  .burger-wrap {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .language-item {
+    padding-top: 54px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .language-item {
+    padding-top: 36px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-nav,
+  .language-wrap {
+    display: none;
+  }
+  .burger-wrap {
+    display: block;
+  }
+  .burger-language {
+    display: block;
+  }
+}

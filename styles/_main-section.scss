@@ -306,6 +306,19 @@
   .main-form {
     width: 100%;
   }
+
+  .event-block {
+    flex-direction: column;
+  }
+  .event-image {
+    width: 100%;
+  }
+  .event-text {
+    padding-left: 0;
+  }
+  .event-list {
+    height: auto;
+  }
 }
 @media screen and (max-width: 480px) {
   .news-image {

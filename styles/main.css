@@ -88,7 +88,7 @@ ul {
   width: 30px;
   height: 30px;
   position: relative;
-  z-index: 6;
+  z-index: 15;
   overflow: hidden;
 }
 
@@ -132,7 +132,7 @@ ul {
 
 /* Меню, которое будет появляться */
 .menu {
-  z-index: 5;
+  z-index: 15;
   position: fixed;
   top: 0;
   left: 0;

@@ -201,9 +201,10 @@
   width: 48%;
 }
 .join-elem {
-  box-shadow: 10px 10px 15px hsla(0, 0%, 100%, 0.05);
+  box-shadow: 10px 10px 15px rgba(213, 213, 213, 0.486);
   padding: 40px;
   min-height: 385px;
+  min-height: 400px;
 }
 .join-text {
   font-family: "Inter";
@@ -262,6 +263,9 @@
   text-align: center;
   text-transform: uppercase;
   width: 300px;
+}
+.join-title {
+  padding-bottom: 40px;
 }
 .main-form-input {
   background: transparent;

@@ -25,6 +25,9 @@
 .arrow-link:hover {
   transform: scale(1.2);
 }
+.page-news-image {
+  width: 600px;
+}
 @media screen and (max-width: 480px) {
   .news-page-block {
     flex-direction: column;

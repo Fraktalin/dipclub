@@ -69,7 +69,7 @@
   line-height: 140.62%;
   color: #000000;
 }
-.header-wrap {
+.header-wrap-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,6 +82,7 @@
   display: flex;
 }
 .main-item-link {
+  font-size: 20px;
   padding: 35px 50px;
   position: relative;
 }

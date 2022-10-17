@@ -302,11 +302,38 @@ ul {
   background-size: cover;
 }
 
+.video-wrap {
+  position: relative;
+  height: 500px;
+}
+
 .video-dnipro {
   width: 100%;
-  position: absolute;
+  height: 500px;
   left: 0;
   z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-title {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Forum";
+  font-size: 50px;
+}
+
+.ddp-image {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .overlay-video {
@@ -321,7 +348,6 @@ ul {
 
 .about-warp {
   padding-top: 44px;
-  padding-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +458,6 @@ ul {
 }
 
 .member-title {
-  margin-top: 200px;
   padding-bottom: 88px;
 }
 
@@ -888,6 +913,13 @@ ul {
           flex-direction: column;
 }
 
+.dnipro-video {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .member-about {
   margin-top: 16px;
 }
@@ -899,7 +931,6 @@ ul {
 .dnipro-video {
   display: block;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 48px;

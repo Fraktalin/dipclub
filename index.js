@@ -22,6 +22,7 @@ menuBtn.addEventListener("click", function () {
 mainForm.addEventListener("submit", sendForm);
 join.addEventListener("click", showForm);
 overlay.addEventListener("click", hideForm);
+
 function sendForm(e) {
   e.preventDefault();
   $(document).ready(function () {

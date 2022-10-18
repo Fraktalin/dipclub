@@ -1,14 +1,29 @@
 .main-footer {
-  background: url("../images/footer-image.png");
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.938) 100%
+    ),
+    url("../images/4.jpg");
+
   height: 530px;
-  background-position: center;
+  margin: 0 auto;
+  width: 90%;
+  background-position: center 65%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-footer-link {
+  display: block;
+  text-align: center;
+  // margin: 0 auto;
 }
 .map-link {
   display: block;
   padding: 16px 0 16px 0;
   font-family: "Roboto";
+  width: 40%;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -23,13 +38,20 @@
   padding: 8px 0 8px 0;
 }
 .contact-title {
-  text-align: left;
+  padding-top: 24px;
+  text-align: center;
 }
-@media screen and (max-width: 480px) {
+.face-link {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+}
+@media screen and (max-width: 768px) {
   .main-footer {
-    height: 180px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 100%;
+    // height: 180px;
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
   }
 }

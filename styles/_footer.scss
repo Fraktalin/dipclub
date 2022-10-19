@@ -1,10 +1,10 @@
 .main-footer {
-  background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.938) 100%
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
     ),
-    url("../images/4.jpg");
+    url("../images/main-image.jpg");
 
   height: 530px;
   margin: 0 auto;
@@ -14,15 +14,15 @@
   background-size: cover;
 }
 .main-footer-link {
-  display: block;
-  text-align: center;
+  // display: block;
+  // text-align: center;
   // margin: 0 auto;
 }
 .map-link {
   display: block;
   padding: 16px 0 16px 0;
   font-family: "Roboto";
-  width: 40%;
+  // width: 40%;
   margin: 0 auto;
   font-style: normal;
   font-weight: 700;
@@ -39,11 +39,12 @@
 }
 .contact-title {
   padding-top: 24px;
-  text-align: center;
+  text-align: left;
 }
 .face-link {
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-top: 16px;
   width: 30px;
 }
 @media screen and (max-width: 768px) {

@@ -83,8 +83,9 @@
 }
 .main-item-link {
   font-size: 20px;
-  padding: 35px 50px;
+  padding: 35px 10px;
   position: relative;
+  font-weight: 700;
 }
 .main-item-link::after {
   transition: 0.3s;
@@ -93,12 +94,12 @@
   content: "";
   width: 0%;
   height: 2px;
-  left: 50px;
+  left: 10px;
   bottom: 30px;
 }
 
 .main-item-link:hover::after {
-  width: 48%;
+  width: 78%;
 }
 .language-item {
   padding: 50px 15px;

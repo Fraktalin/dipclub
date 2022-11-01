@@ -138,7 +138,16 @@
   overflow-y: scroll;
   padding-right: 8px;
 }
-
+.form-wrap {
+  position: relative;
+}
+.form-logo {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, -50%);
+}
 .news-wrap::-webkit-scrollbar {
   width: 4px;
   height: 8px;
@@ -395,6 +404,9 @@
   transform: translate(-50%, -50%);
   padding: 24px;
   background: rgb(255, 255, 255);
+}
+.main-form {
+  padding-top: 48px;
 }
 .submit-button {
   background: transparent;

@@ -412,32 +412,43 @@
       </div>
     </footer>
     <form action="" class="main-form hidden">
-      <input
-        id="name"
-        type="text"
-        name="user_name"
-        placeholder="Им`я"
-        class="main-form-input"
-        required=""
-      />
-      <input
-        id="email"
-        type="email"
-        name="user_email"
-        placeholder="Email"
-        class="main-form-input"
-      />
-      <input
-        id="phone"
-        type="text"
-        name="user_phone"
-        placeholder="Телефон"
-        class="main-form-input"
-        required=""
-      />
-      <button id="final-button" class="submit-button" type="submit">
-        подати заявку
-      </button>
+      <div class="form-wrap">
+        <img src="./images/logo-transparent.png" class="form-logo" alt="" />
+        <input
+          id="name"
+          type="text"
+          name="user_name"
+          placeholder="Iм`я та Прiзвище"
+          class="main-form-input"
+          required=""
+        />
+        <input
+          id="org"
+          type="text"
+          name="user_org"
+          placeholder="Організація яку представляєте"
+          class="main-form-input"
+          required=""
+        />
+        <input
+          id="email"
+          type="email"
+          name="user_email"
+          placeholder="Email"
+          class="main-form-input"
+        />
+        <input
+          id="phone"
+          type="text"
+          name="user_phone"
+          placeholder="Телефон"
+          class="main-form-input"
+          required=""
+        />
+        <button id="final-button" class="submit-button" type="submit">
+          подати заявку
+        </button>
+      </div>
     </form>
     <div class="overlay hidden"></div>
     <div class="message hidden" style="text-align: center">

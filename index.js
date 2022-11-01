@@ -6,43 +6,6 @@ const menuBtn = document.querySelector(".menu-btn"),
   inputs = document.querySelectorAll(".main-form-input"),
   mainForm = document.querySelector(".main-form"),
   overlay = document.querySelector(".overlay");
-
-// $(document).ready(function () {
-//   $(".members-wrap").slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     arrow: true,
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           dots: false,
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
-//       // You can unslick at a given breakpoint now by adding:
-//       // settings: "unslick"
-//       // instead of a settings object
-//     ],
-//   });
-// });
 for (const i of burgerLinks) {
   i.addEventListener("click", hideBurger);
 }
@@ -67,6 +30,7 @@ function sendForm(e) {
       method: "GET",
       data: {
         user_phone: $("#phone").val(),
+        user_org: $("#org").val(),
         user_name: $("#name").val(),
         user_email: $("#email").val(),
       },

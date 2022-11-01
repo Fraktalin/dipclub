@@ -129,10 +129,34 @@
   background-size: cover;
   padding-bottom: 120px;
 }
-.news-wrap {
-  padding-top: 88px;
+.news-title {
+  margin-bottom: 24px;
 }
+.news-wrap {
+  transform: scaleX(-1);
+  height: 785px;
+  overflow-y: scroll;
+  padding-right: 8px;
+}
+
+.news-wrap::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: black;
+}
+::-webkit-scrollbar-button {
+  height: 0;
+}
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
 .news-item {
+  transform: scaleX(-1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -168,7 +192,6 @@
 }
 
 .news-item:hover .arrow {
-  margin-right: -40px;
   width: 70px;
 }
 .member-image {

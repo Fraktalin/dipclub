@@ -1,17 +1,22 @@
 .main-footer {
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    url("../images/main-image.jpg");
+  background: url("../images/footer-image.jpg");
 
   height: 530px;
   margin: 0 auto;
-  width: 90%;
-  background-position: center 65%;
+  // width: 90%;
+  // background-position: center 65%;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  padding-top: 40px;
+}
+.footer-wrap {
+  width: 40%;
+  margin: 0 auto;
+  background: white;
+  margin-top: 40px;
+  padding: 24px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.514);
+  text-align: center;
 }
 .main-footer-link {
   // display: block;
@@ -39,11 +44,10 @@
 }
 .contact-title {
   padding-top: 24px;
-  text-align: left;
 }
 .face-link {
   display: block;
-  // margin: 0 auto;
+  margin: 0 auto;
   margin-top: 16px;
   width: 30px;
 }

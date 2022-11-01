@@ -142,11 +142,9 @@
   position: relative;
 }
 .form-logo {
-  position: absolute;
-  width: 100px;
-  left: 50%;
-  top: -30px;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 .news-wrap::-webkit-scrollbar {
   width: 4px;
@@ -406,7 +404,7 @@
   background: rgb(255, 255, 255);
 }
 .main-form {
-  padding-top: 48px;
+  // padding-top: 48px;
 }
 .submit-button {
   background: transparent;

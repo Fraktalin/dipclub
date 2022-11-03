@@ -177,7 +177,8 @@
 }
 .news-text {
   padding-top: 16px;
-  padding-left: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 24px;
@@ -333,7 +334,8 @@
 }
 .event-text {
   padding-top: 16px;
-  padding-left: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 24px;
@@ -542,7 +544,12 @@
     width: 100%;
   }
   .event-text {
-    padding-left: 0;
+    padding-left: 8;
+    padding-right: 8px;
+  }
+  .news-text {
+    padding-left: 8;
+    padding-right: 8px;
   }
   .event-list {
     height: auto;

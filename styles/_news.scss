@@ -35,7 +35,19 @@
 .page-news-image {
   width: 600px;
 }
+.gallery-image-link img {
+  width: 24%;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-image-link img {
+    width: 49%;
+  }
+}
 @media screen and (max-width: 480px) {
+  .gallery-image-link img {
+    width: 100%;
+  }
   .news-page-block {
     flex-direction: column;
   }

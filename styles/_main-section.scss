@@ -176,9 +176,7 @@
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.13);
 }
 .news-text {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 24px;
@@ -192,6 +190,8 @@
   font-size: 20px;
   line-height: 140.62%;
   color: #1957c8;
+  position: absolute;
+  bottom: 8px;
 }
 .arrow {
   width: 50px;
@@ -299,6 +299,7 @@
   height: 400px;
   overflow-y: scroll;
   transform: scaleX(-1);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.13);
   // unicode-bidi: bidi-override;
 }
 .event-list::-webkit-scrollbar {
@@ -323,13 +324,14 @@
   width: 48%;
 }
 .event-block {
+  min-height: 192px;
   transform: scaleX(-1);
   padding-left: 8px;
   display: flex;
   width: 97%;
   margin-left: auto;
   background-color: white;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.13);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   margin-bottom: 16px;
 }
 .event-text {
@@ -338,12 +340,12 @@
   padding-right: 16px;
   font-family: "Forum";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 140.62%;
   color: #000000;
 }
 .event-title {
-  padding-bottom: 56px;
+  padding-bottom: 40px;
 }
 .event-image {
   width: 238px;
@@ -475,11 +477,25 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .event-list {
+    height: 440px;
+  }
+
+  .event-text {
+    font-size: 18px;
+  }
+  .event-block {
+    min-height: 212px;
+  }
   .member-title-elem {
     font-size: 24px;
   }
   .slick-prev {
     left: -25px;
+  }
+
+  .info-block {
+    width: 85%;
   }
   .slick-next,
   .slick-prev {
@@ -502,6 +518,13 @@
   .member-item {
     width: 30%;
   }
+  .event-wrap {
+    flex-direction: column;
+  }
+  .event-block-wrap,
+  .join-block {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .member-item {
@@ -509,6 +532,13 @@
   }
   .about-warp {
     flex-direction: column;
+  }
+  .news-image {
+    width: 100%;
+  }
+  .info-block {
+    flex-direction: column;
+    width: 100%;
   }
   .about-block {
     width: 100%;
@@ -519,13 +549,6 @@
   }
   .news-image {
     width: 50%;
-  }
-  .event-wrap {
-    flex-direction: column;
-  }
-  .event-block-wrap,
-  .join-block {
-    width: 100%;
   }
   .join-title {
     margin-top: 16px;
@@ -548,8 +571,7 @@
     padding-right: 8px;
   }
   .news-text {
-    padding-left: 8;
-    padding-right: 8px;
+    padding: 8px;
   }
   .event-list {
     height: auto;
@@ -562,13 +584,6 @@
   .slick-prev,
   .slick-next {
     display: none !important;
-  }
-  .news-image {
-    width: 100%;
-  }
-  .info-block {
-    flex-direction: column;
-    width: 100%;
   }
   .arrow {
     display: none;

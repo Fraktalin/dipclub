@@ -38,6 +38,7 @@
       content="дипломатичний клуб, клуб дипломатів, Фiлатов, Филатов, Міллер, Півняк, Дипломати,"
     />
     <title>Новини</title>
+    <link rel="stylesheet" href="./lightbox2-2.11.3/src/css/lightbox.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
@@ -72,7 +73,50 @@
         бюджету Дніпровської міської ради Володимир Міллер. Символічно акція у
         парку Шевченка відбулася у Міжнародний день Землі.
       </p>
-
+      <div class="image-row">
+        <div class="image-set">
+          <a
+            class="gallery-image-link"
+            href="./images/4.jpg"
+            data-lightbox="example-set"
+            data-title="Click the right half of the image to move forward."
+            ><img
+              class="example-image"
+              src="./images/4.jpg"
+              alt="Golden Gate Bridge with San Francisco in distance"
+          /></a>
+          <a
+            class="gallery-image-link"
+            href="./images/ddp.png"
+            data-lightbox="example-set"
+            data-title="Or press the right arrow on your keyboard."
+            ><img
+              class="example-image"
+              src="./images/ddp.png"
+              alt="Forest with mountains behind"
+          /></a>
+          <a
+            class="gallery-image-link"
+            href="./images/footer-image.jpg"
+            data-lightbox="example-set"
+            data-title="The next image in the set is preloaded as you're viewing."
+            ><img
+              class="example-image"
+              src="./images/footer-image.jpg"
+              alt="Bicyclist looking out over hill at ocean"
+          /></a>
+          <a
+            class="gallery-image-link"
+            href="./images/main-image.jpg"
+            data-lightbox="example-set"
+            data-title="Click anywhere outside the image or the X to the right to close."
+            ><img
+              class="example-image"
+              src="./images/main-image.jpg"
+              alt="Small lighthouse at bottom with ocean behind"
+          /></a>
+        </div>
+      </div>
       <div class="who-footer">
         <a class="arrow-link" href="./index.html">
           <img class="arrow-footer" src="./images/icons/arrow.svg" alt=""
@@ -80,4 +124,11 @@
       </div>
     </div>
   </body>
+  <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+    });
+  </script>
 </html>

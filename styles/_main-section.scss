@@ -177,6 +177,7 @@
 }
 .news-text {
   padding: 16px;
+  padding-bottom: 24px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 24px;
@@ -191,7 +192,7 @@
   line-height: 140.62%;
   color: #1957c8;
   position: absolute;
-  bottom: 8px;
+  bottom: 0;
 }
 .arrow {
   width: 50px;
@@ -335,9 +336,7 @@
   margin-bottom: 16px;
 }
 .event-text {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 20px;
@@ -540,15 +539,12 @@
     flex-direction: column;
     width: 100%;
   }
+  .arrow {
+    display: none;
+  }
   .about-block {
     width: 100%;
     margin-top: 16px;
-  }
-  .info-block {
-    width: 85%;
-  }
-  .news-image {
-    width: 50%;
   }
   .join-title {
     margin-top: 16px;
@@ -567,11 +563,13 @@
     width: 100%;
   }
   .event-text {
-    padding-left: 8;
+    padding-left: 8px;
     padding-right: 8px;
+    padding-bottom: 24px;
   }
   .news-text {
     padding: 8px;
+    padding-bottom: 24px;
   }
   .event-list {
     height: auto;
